@@ -62,7 +62,6 @@ public class WriteBatch {
             __put(ptr, key, stream.toByteArray());
 
         } catch (Exception e) {
-            e.printStackTrace();
             throw new SnappydbException(e.getMessage());
         }
     }
@@ -80,8 +79,7 @@ public class WriteBatch {
             __put(ptr, key, stream.toByteArray());
 
         } catch (Exception e) {
-            e.printStackTrace();
-            throw new SnappydbException("Kryo exception " + e.getMessage());
+            throw new SnappydbException(e.getMessage());
         }
     }
 
@@ -98,7 +96,6 @@ public class WriteBatch {
             __put(ptr, key, stream.toByteArray());
 
         } catch (Exception e) {
-            e.printStackTrace();
             throw new SnappydbException(e.getMessage());
         }
     }
@@ -116,7 +113,6 @@ public class WriteBatch {
             __put(ptr, key, stream.toByteArray());
 
         } catch (Exception e) {
-            e.printStackTrace();
             throw new SnappydbException("Kryo exception " + e.getMessage());
         }
     }
